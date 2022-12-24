@@ -21,11 +21,13 @@ struct ContentView: View {
                 ForEach(animals) { animal in
                     NavigationLink(destination: AnimalDetailView(animal: animal)) {
                         AnimalListItemView(animal: animal)
+                            .padding(.vertical, 10)
                     }
                     
                 }
             }
             .navigationBarTitle("Africa", displayMode: .large)
+            .listStyle(.plain)
         }
         
     }
