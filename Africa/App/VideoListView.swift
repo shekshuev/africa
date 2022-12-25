@@ -22,7 +22,7 @@ struct VideoListView: View {
                     }
                 }
             }
-            .listStyle(.insetGrouped)
+            .listStyle(.plain)
             .navigationBarTitle("Videos", displayMode: .inline)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing) {
